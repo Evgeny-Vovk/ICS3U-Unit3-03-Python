@@ -10,14 +10,14 @@ import random
 def main():
 
     # input and variables
-    number = random.randint(0, 9)
+    random_number = random.randint(0, 9)
     guess_number = int(input("Guess the number from 0 to 9: "))
 
     # process and output
-    if guess_number == number:
+    if guess_number == random_number:
         print("\nYou guessed right.")
     else:
-        print("\nYou guessed wrong, the number was {}.".format(number))
+        print("\nYou guessed wrong, the number was {}.".format(random_number))
 
     print("\n\nDone.")
 
